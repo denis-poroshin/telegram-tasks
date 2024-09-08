@@ -1,5 +1,6 @@
 package pro.sky.telegrambot.repostory;
 
+import com.pengrad.telegrambot.request.SendMessage;
 import jdk.jfr.Period;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -18,6 +19,8 @@ public interface NotificationTaskRepository extends JpaRepository<NotificationTa
 //    Collection<NotificationTask> findBy(LocalDateTime localDateTime);
     @Query(value = "SELECT * FROM notification_task WHERE date_time = :localDateTime", nativeQuery = true)
     Collection<NotificationTask> findByAllDateTime(@Param("localDateTime") LocalDateTime localDateTime);
+
+
 
 
 

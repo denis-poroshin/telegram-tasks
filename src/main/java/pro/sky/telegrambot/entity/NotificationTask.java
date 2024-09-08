@@ -13,7 +13,7 @@ public class NotificationTask {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "idChat")
+    @Column(name = "id_chat")
     private Long idChat;
 
     @Column(name = "text")

@@ -2,10 +2,10 @@
 
 -- changeset dporoshin:1
 
--- CREATE TABLE notification_task
--- (
---     id SERTAL PRIMARY KEY,
---     idChat INTEGER,
---     text TEXT,
---     data DATE
--- );
+CREATE TABLE notification_task
+(
+    id INTEGER PRIMARY KEY,
+    id_chat INTEGER,
+    text TEXT,
+    data_time DATE
+);
